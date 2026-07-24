@@ -43,9 +43,9 @@ h1{
 }
 
 .grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 8px;
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:8px;
 }
 
 .card{
@@ -59,9 +59,9 @@ h1{
 }
 
 .card img{
-    width: 100%;
-    height: 14vh;
-    object-fit: contain;
+    width:100%;
+    aspect-ratio:3/4;
+    object-fit:contain;
 }
 
 .card strong{
