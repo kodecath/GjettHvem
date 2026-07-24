@@ -44,7 +44,7 @@ h1{
 
 .grid{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 8px;
 }
 
@@ -60,9 +60,8 @@ h1{
 
 .card img{
     width: 100%;
-    height: 160px;
+    height: 14vh;
     object-fit: contain;
-    border-radius: 4px;
 }
 
 .card strong{
@@ -94,7 +93,7 @@ h1{
 .count{
     font-size: 20px;
     font-weight: bold;
-    margin: 12px 0;
+    margin-top:50%;
 }
 
 button{
@@ -104,4 +103,37 @@ button{
 
 #newGame{
     margin-top: auto;
+}
+
+#helpButton {
+    position: absolute;
+    top: 8px;
+    right: 15px;
+
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+
+    user-select: none;
+}
+
+@media (max-height: 900px) {
+    .card img {
+        height: 130px;
+    }
+}
+
+@media (max-height: 750px) {
+    .card img {
+        height: 100px;
+    }
+
+    .card strong {
+        font-size: 0.8rem;
+    }
+
+    .card div {
+        font-size: 0.8rem;
+    }
 }

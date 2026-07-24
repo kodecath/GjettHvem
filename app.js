@@ -54,3 +54,11 @@ document.getElementById("newGame").addEventListener("click", newGame);
 
 draw();
 newGame();
+
+const help = document.getElementById("help");
+
+document.getElementById("helpButton")
+    .addEventListener("click", () => help.showModal());
+
+document.getElementById("closeHelp")
+    .addEventListener("click", () => help.close());
